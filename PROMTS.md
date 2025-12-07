@@ -1,0 +1,1 @@
+Analyse cloudflare documantation on how to start building application with it and give me an overview of what I have to do

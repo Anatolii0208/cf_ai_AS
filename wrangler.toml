@@ -1,0 +1,16 @@
+name = "cf_ai_as"
+main = "src/index.js"
+compatibility_date = "2024-04-05"
+
+# 1. Enable Workers AI
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "AI_MEMORY"
+class_name = "ChatMemoryV3"
+
+[[migrations]]
+tag = "v3"
+new_sqlite_classes = ["ChatMemoryV3"]
+deleted_classes = ["ChatMemory"]
